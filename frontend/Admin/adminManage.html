@@ -10,43 +10,46 @@
 <body class="bg-cover bg-center bg-no-repeat text-white flex flex-col min-h-screen" style="background-image: url('/Images/DarkWallpaper.png');">
     <header class="text-white p-4 flex items-center justify-between">
         <div class="logo-home">
-            <img src="/Images/white-logo.png" alt="Logo" class="h-8 sm:h-10">
+            <img src="/Images/white-logo.png" alt="Logo" class="h-32 sm:h-10">
         </div>
         <nav class="hidden md:flex space-x-6">
-            <a href="adminDashboard.html" class="hover:text-blue-300 text-sm sm:text-base">Dashboard</a>
-            <a href="adminManage.html" class="hover:text-blue-300 text-sm sm:text-base">View Employees</a>
+            <a href="/frontend/index.html" class="hover:text-blue-300 text-sm sm:text-base">Home</a>
+            <a href="/frontend/Admin/adminDashboard.html" class="hover:text-blue-300 text-sm sm:text-base">Dashboard</a>
+            <a href="/frontend/Admin/adminManage.html" class="hover:text-blue-300 text-sm sm:text-base">View Employees</a>
             <div class="relative group">
                 <button class="hover:text-blue-300 text-sm sm:text-base">Tasks</button>
                 <div class="absolute hidden group-hover:block bg-gray-700 mt-2 rounded shadow-lg">
-                    <a href="admin-onTasks.html" class="block px-4 py-2 hover:bg-blue-600 text-sm">Onboarding Tasks</a>
-                    <a href="admin-trainTasks.html" class="block px-4 py-2 hover:bg-blue-600 text-sm">Training Tasks</a>
-                    <a href="track-progress.html" class="block px-4 py-2 hover:bg-blue-600 text-sm">Progress</a>
-                    <a href="admin-reports.html" class="block px-4 py-2 hover:bg-blue-600 text-sm">Reports</a>
-                    <a href="admin-notifications.html" class="block px-4 py-2 hover:bg-blue-600 text-sm">Notifications</a>
+                    <a href="/frontend/Admin/admin-onTasks.html" class="block px-4 py-2 hover:bg-blue-600 text-sm">Onboarding Tasks</a>
+                    <a href="/frontend/Admin/admin-trainTasks.html" class="block px-4 py-2 hover:bg-blue-600 text-sm">Training Tasks</a>
+                    <a href="/frontend/Admin/track-progress.html" class="block px-4 py-2 hover:bg-blue-600 text-sm">Progress</a>
+                    <a href="/frontend/Admin/admin-reports.html" class="block px-4 py-2 hover:bg-blue-600 text-sm">Reports</a>
+                    <a href="/frontend/Admin/admin-notifications.html" class="block px-4 py-2 hover:bg-blue-600 text-sm">Notifications</a>
                     
                 </div>
             </div>
             <a href="admin-settings.html" class="hover:text-blue-300 text-sm sm:text-base">Settings</a>
             <!-- <a href="notification.html" class="hover:text-blue-300 text-sm sm:text-base">Notifications</a>
             <a href="support.html" class="hover:text-blue-300 text-sm sm:text-base">Support</a> -->
-            <a href="Login.html" class="hover:text-blue-300 text-sm sm:text-base">Logout</a>
+            <a href="/frontend/Login.html" class="hover:text-blue-300 text-sm sm:text-base">Logout</a>
         </nav>
         <button id="menuButton" class="md:hidden text-white text-lg sm:text-xl">☰</button>
     </header>
 
     <nav id="mobileNavbar" class="fixed inset-y-0 left-0 z-50 w-64 bg-gray-800 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
         <ul class="flex flex-col space-y-4 p-6 text-white text-sm">
-            <li><a href="adminDashboard.html" class="hover:text-blue-300">Dashboard</a></li>
-            <li><a href="adminManage.html" class="hover:text-blue-300">View Employees</a></li>
-            <li><a href="admin-onTasks.html" class="hover:text-blue-300">Onboarding Tasks</a></li>
-            <li><a href="admin-trainTasks.html" class="hover:text-blue-300">Training Tasks</a></li>
-            <li><a href="track-progress.html" class="hover:text-blue-300">Progress</a></li>
-            <li><a href="admin-reports.html" class="hover:text-blue-300">Reports</a></li>
-            <li><a href="admin-notifications.html" class="hover:text-blue-300">Notifications</a></li>
-            <li><a href="admin-settings.html" class="hover:text-blue-300">Settings</a></li>
-            <li><a href="Login.html" class="hover:text-blue-300">Logout</a></li>
+            <li><a href="/frontend/index.html" class="hover:text-blue-300">Home</a></li>
+            <li><a href="/frontend/Admin/adminDashboard.html" class="hover:text-blue-300">Dashboard</a></li>
+            <li><a href="/frontend/Admin/adminManage.html" class="hover:text-blue-300">View Employees</a></li>
+            <li><a href="/frontend/Admin/admin-onTasks.html" class="hover:text-blue-300">Onboarding Tasks</a></li>
+            <li><a href="/frontend/Admin/admin-trainTasks.html" class="hover:text-blue-300">Training Tasks</a></li>
+            <li><a href="/frontend/Admin/track-progress.html" class="hover:text-blue-300">Progress</a></li>
+            <li><a href="/frontend/Admin/admin-reports.html" class="hover:text-blue-300">Reports</a></li>
+            <li><a href="/frontend/Admin/admin-notifications.html" class="hover:text-blue-300">Notifications</a></li>
+            <li><a href="/frontend/Admin/admin-settings.html" class="hover:text-blue-300">Settings</a></li>
+            <li><a href="/frontend/Login.html" class="hover:text-blue-300">Logout</a></li>
         </ul>
     </nav>
+
 
     <!-- Main Content -->
     <div class="flex-grow container mx-auto p-6">
@@ -72,7 +75,7 @@
                         <td class="p-3 text-black">Software Engineer</td>
                         <td class="p-3 text-black">01-02-2025</td>
                         <td class="p-3 flex space-x-2">
-                            <a href="editAdmin.html" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Verify</a>
+                            <a href="/frontend/Admin/editAdmin.html" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Verify</a>
                             <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Remove</button>
                         </td>
                     </tr>
@@ -82,7 +85,7 @@
                         <td class="p-3 text-black">HR Manager</td>
                         <td class="p-3 text-black">01-02-2025</td>
                         <td class="p-3 flex space-x-2">
-                            <a href="editAdmin.html" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Verify</a>
+                            <a href="/frontend/Admin/editAdmin.html" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Verify</a>
                             <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Remove</button>
                         </td>
                     </tr>

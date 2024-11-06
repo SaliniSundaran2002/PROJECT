@@ -9,7 +9,7 @@
 <body class="bg-cover bg-center bg-no-repeat" style="background-image: url('/Images/DarkWallpaper.png'); min-height: 100vh; display: flex; align-items: center; justify-content: center;">
     <div class="bg-white bg-opacity-10 backdrop-blur-lg w-full max-w-md md:max-w-lg p-8 rounded-2xl shadow-lg border border-white/20">
         <div class="flex justify-center mb-6">
-            <img src="/Images/white-logo.png" alt="Company Logo" class="w-32 h-32 object-cover">
+            <img src="/Images/white-logo.png" alt="Company Logo" class="w-[150px] h-[150px] object-cover">
         </div>
         <h2 class="text-2xl font-semibold text-center text-white mb-6">Sign Up</h2>
         <form>
@@ -29,13 +29,23 @@
             </div>
 
             <div class="flex flex-col mb-4">
-                <label for="password" class="text-white text-lg">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" class="h-12 rounded-lg px-4 mt-1" required>
+                <label for="address" class="text-white text-lg">Address:</label>
+                <textarea id="address" name="address" placeholder="Enter your address" class="h-24 rounded-lg px-4 mt-1" required></textarea>
             </div>
 
             <div class="flex flex-col mb-4">
-                <label for="confirm-password" class="text-white text-lg">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" class="h-12 rounded-lg px-4 mt-1" required>
+                <label for="phone" class="text-white text-lg">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="h-12 rounded-lg px-4 mt-1" required>
+            </div>
+
+            <div class="flex flex-col mb-4">
+                <label for="password" class="text-white text-lg">Username:</label>
+                <input type="password" id="username" name="password" placeholder="Enter your username" class="h-12 rounded-lg px-4 mt-1" required>
+            </div>
+
+            <div class="flex flex-col mb-4">
+                <label for="confirm-password" class="text-white text-lg">Password:</label>
+                <input type="password" id="password" name="confirm-password" placeholder="Confirm your password" class="h-12 rounded-lg px-4 mt-1" required>
             </div>
 
             <div class="flex flex-col mb-4">
@@ -45,7 +55,7 @@
 
             <div class="flex flex-col mb-6">
                 <label for="department" class="text-white text-lg">Role:</label>
-                <select id="department" name="department" class="h-12 rounded-lg px-4 mt-1" required>
+                <select id="role" name="role" class="h-12 rounded-lg px-4 mt-1" required>
                     <option value="">Select your role</option>
                     <!-- <option value="hr">HR</option> -->
                     <option value="developer">Frontend Developer</option>
@@ -59,7 +69,7 @@
             </button>
         </form>
 
-        <p class="text-center text-white mt-4">Already have an account? <a href="Login.html" class="text-sky-400 underline hover:text-sky-900">Login here</a>.</p>
+        <p class="text-center text-white mt-4">Already have an account? <a href="/frontend/Login.html" class="text-sky-400 underline hover:text-sky-900">Login here</a>.</p>
     </div>
 </body>
 </html>
